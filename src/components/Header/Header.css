@@ -1,0 +1,143 @@
+.header{
+    height:60px;
+    display:flex;
+    align-items :center;
+    background-color: #131921;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    color: white;
+    padding: 0 10px;
+}
+
+.header__logo{
+    width: 100px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.header__deliver {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    padding-left: 13px;
+}
+  
+.header__deliver .MuiSvgIcon-root {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+}
+
+.header__search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.header__searchInput{
+    height: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.header__language {
+    position: relative;
+    height: 25px;
+    width: 25px;
+}
+  
+.header__flag {
+    height: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+  
+.header__searchIcon{
+    padding: 5px 10px;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #febd69;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+.header__searchIcon:hover {
+    background-color: #cd9042;
+    cursor: pointer;
+  }
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 200px;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.header__option{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header__border {
+    padding: 7px 10px;
+    margin: 0;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.header__optionLineOne{
+     font-size: 12px;
+}
+
+.header__optionLineTwo{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__optionCart{
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+  
+.header__optionCart .MuiSvgIcon-root {
+    font-size: 30px;
+}
+
+.header__cartCount{
+    margin-left:10 20px;
+    position: absolute;
+    top: -15px;
+    right:11px;
+    color: #f08804;
+}
+
+.header__border:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+    .deliverBorder,
+    .languageBorder,
+    .header__signInLink,
+    .header__ordersLink {
+        display: none;
+    }
+    .header__nav {
+      min-width: 25px;
+      margin: 5px;
+    }
+  } 

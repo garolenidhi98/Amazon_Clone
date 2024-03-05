@@ -1,0 +1,26 @@
+[debug] [2024-02-26T07:07:28.802Z] ----------------------------------------------------------------------
+[debug] [2024-02-26T07:07:28.806Z] Command:       C:\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project amazon-clone
+[debug] [2024-02-26T07:07:28.807Z] CLI Version:   13.3.1
+[debug] [2024-02-26T07:07:28.807Z] Platform:      win32
+[debug] [2024-02-26T07:07:28.808Z] Node Version:  v18.18.2
+[debug] [2024-02-26T07:07:28.809Z] Time:          Mon Feb 26 2024 12:37:28 GMT+0530 (India Standard Time)
+[debug] [2024-02-26T07:07:28.809Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-26T07:07:28.904Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-26T07:07:28.905Z] > authorizing via signed-in user (nidhigarole98@gmail.com)
+[debug] [2024-02-26T07:07:28.905Z] [iam] checking project amazon-clone for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-26T07:07:28.908Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone:testIamPermissions [none]
+[debug] [2024-02-26T07:07:28.908Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone:testIamPermissions x-goog-quota-user=projects/amazon-clone
+[debug] [2024-02-26T07:07:28.909Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-26T07:07:31.376Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone:testIamPermissions 200
+[debug] [2024-02-26T07:07:31.377Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone:testIamPermissions {}
+[debug] [2024-02-26T07:07:31.377Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project amazon-clone:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-02-26T07:07:31.378Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone [none]
+[debug] [2024-02-26T07:07:33.522Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone 403
+[debug] [2024-02-26T07:07:33.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-02-26T07:07:33.523Z] HTTP Error: 403, The caller does not have permission
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
